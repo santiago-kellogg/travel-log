@@ -1,0 +1,11 @@
+<h1>Places</h1>
+
+<% if @places.empty? %>
+  <p>No places yet.</p>
+<% else %>
+  <ul>
+    <% @places.each do |place| %>
+      <li><%= place["name"] %></li>
+    <% end %>
+  </ul>
+<% end %>
